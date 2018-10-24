@@ -25,7 +25,7 @@ const pedirData = idPlanet =>{
     xhttp.send();
 };
 
-
+// Función que actualiza el DOM
 
 function actualizarDatos (info) {
 
@@ -34,6 +34,8 @@ function actualizarDatos (info) {
     document.getElementById("clima").innerHTML = info.climate
 
 };
+
+// Acá se crean eventos del buscador / botón
 
 let input = document.getElementById("buscador")
 let boton = document.getElementById("botonbuscar")
@@ -51,9 +53,9 @@ boton.addEventListener("click", function(){
         
     }
     
-    
 })
 
+// Objeto que tiene la información genérica de error. 
 
 infoError = {
     name: "No se encontró planeta",
